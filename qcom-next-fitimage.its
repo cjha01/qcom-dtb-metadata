@@ -279,6 +279,15 @@
 			data = /incbin/("./arch/arm64/boot/dts/qcom/monaco-arduino-monza.dtb");
 			type = "flat_dt";
 		};
+		fdt-shikra-cqm-evk-camx.dtbo {
+			data = /incbin/("./arch/arm64/boot/dts/qcom/shikra-cqm-evk-camx.dtbo");
+		};
+		fdt-shikra-cqs-evk-camx.dtbo {
+			data = /incbin/("./arch/arm64/boot/dts/qcom/shikra-cqs-evk-camx.dtbo");
+		};
+		fdt-shikra-iqs-evk-camx.dtbo {
+			data = /incbin/("./arch/arm64/boot/dts/qcom/shikra-iqs-evk-camx.dtbo");
+		};
 	};
 
 	configurations {
@@ -561,6 +570,18 @@
 		conf-70 {
 			compatible = "qcom,elizacqs-evk-ufs";
 			fdt = "fdt-eliza-cqs-evk-ufs.dtb";
+		};
+		conf-71 {
+			compatible = "qcom,shikracqm-itp-camx";
+			fdt = "fdt-shikra-cqm-evk.dtb", "fdt-shikra-cqm-evk-camx";
+		};
+		conf-72 {
+			compatible = "qcom,shikracqs-itp-camx";
+			fdt = "fdt-shikra-cqs-evk.dtb", "fdt-shikra-cqs-evk-camx";
+		};
+		conf-73 {
+			compatible = "qcom,shikraiqs-itp-camx";
+			fdt = "fdt-shikra-iqs-evk.dtb", "fdt-shikra-iqs-evk-camx;
 		};
 	};
 };
