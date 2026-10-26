@@ -171,6 +171,10 @@
 			board-id = <0x00000025>;
 		};
 
+		qcb {
+			board-id = <0x0000002b>;
+		};
+
 		qrd {
 			board-id = <0x0000000b>;
 		};

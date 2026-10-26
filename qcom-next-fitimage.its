@@ -125,6 +125,10 @@
 			data = /incbin/("./arch/arm64/boot/dts/qcom/glymur-crd.dtb");
 			type = "flat_dt";
 		};
+		fdt-glymur-qcb.dtb {
+			data = /incbin/("./arch/arm64/boot/dts/qcom/glymur-qcb.dtb");
+			type = "flat_dt";
+		};
 		fdt-lemans-evk-camx.dtbo {
 			data = /incbin/("./arch/arm64/boot/dts/qcom/lemans-evk-camx.dtbo");
 			type = "flat_dt";
@@ -561,6 +565,10 @@
 		conf-70 {
 			compatible = "qcom,elizacqs-evk-ufs";
 			fdt = "fdt-eliza-cqs-evk-ufs.dtb";
+		};
+		conf-71 {
+			compatible = "qcom,glymur-qcb";
+			fdt = "fdt-glymur-qcb.dtb";
 		};
 	};
 };
